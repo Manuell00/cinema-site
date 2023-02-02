@@ -1,0 +1,106 @@
+body {
+    background-color: rgb(23, 21, 21);
+  }
+  
+  h1{
+    font-size: 90px;
+    font-family:"Courier New", monospace;
+    text-align:center;
+    color:yellow;
+  }
+
+  .proposte > h6 {
+    font-size:30px;
+    font-family: "Lucida Console", "Courier New", monospace;
+    padding-top:50px;
+    color:white;
+    text-align:center;
+
+  }
+
+  .proposte > p {
+    font-size: 15px;
+    font-family: "Lucida Console", "Courier New", monospace;
+    padding-top: 0px;
+    color: white;
+    text-align: center;
+  }
+  
+
+  .card1 {
+    position: relative;
+    /* margin-left: 100px; */
+    margin-top: 20px;
+    background-color: rgb(23, 21, 21);
+    border: 2px solid;
+    border-radius: 12px;
+    padding: 5px;
+    border-color: white;
+    color: white;
+  }
+
+  .card2 {
+    position: relative;
+    /* margin-left: 80px; */
+    margin-top: 20px;
+    background-color: rgb(23, 21, 21);
+    border: 2px solid;
+    border-radius: 12px;
+    padding: 5px;
+    border-color: white;
+    color: white;
+  }
+  
+
+  .card-title {
+    padding-top: 5px;
+    padding-left: 10px;
+    color: yellow;
+    font-size: 18px;
+  }
+  
+  .card-text {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 5px;
+    color: white;
+    font-size: 13px;
+  }
+  
+  .card-footer {
+    background-color: rgb(23, 21, 21);
+    color: white;
+  }
+
+
+  .ultimi-film-wrapper {
+    display: flex;
+    align-items: center;
+    margin-left: 150px;
+    margin-right: 150px;
+  }
+  .proposte-wrapper {
+    display: flex;
+    align-items: center;
+    margin-left: 150px;
+    margin-right: 150px;
+  }
+
+  /* Inserisco il colore delle stelle riguardanti le valutazioni dei film */
+
+  .checked {
+    color: yellow
+  }
+
+  /* Poisiziono centralmente il bottone per inserire la propria recensione */
+  .mia-recensione{
+    /* margin-left: 44%; */
+  }
+
+  .center-btn{
+    margin: auto;
+    width: 50%;
+    text-align: center;
+  }
+

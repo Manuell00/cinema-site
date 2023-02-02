@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Inserisco il link a bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <!-- Inserisco il titolo della mia pagina nel browser -->
+    <title>Cinema 1635</title>
+
+    <!-- voglio inserire anche un'icona -->
+    <link rel="icon" type="image/png" sizes="30x30" href="https://img.freepik.com/premium-vector/cinema-camera-roll-film-logo-design-template_527727-210.jpg" />
+    <link rel="stylesheet" href="" />
+  </head>
+
+  <body>
+
+<style>
+
+ol, ul { 
+  list-style-type: none;
+  padding-left: 0px;
+}
+
+body {
+  background-color: rgb(23, 21, 21); 
+}
+
+h1{
+  font-size: 90px;
+  font-family:"Courier New", monospace;
+  text-align:center;
+  color:yellow;
+}
+
+h2{
+  color:black;
+}
+
+main{
+  padding: 20px;
+  padding-bottom: 5.2%;
+  background-color:antiquewhite;
+}
+
+footer{
+  position: fixed;
+  bottom: 0px;
+}
+
+</style>
+
+    <header>
+      <h1 id="top">
+        CINEMA 1635
+      </h1>
+    </header>
+
+    <!-- inserisco una barra di navigazione che contien gli hyperlinks per le altre pagine del sito-->
+    <div>
+      <nav class="navbar navbar-expand-sm bg-light navbar-light">
+        <!-- Brand/logo -->
+        <a class="navbar-brand" href="#">
+          <img src="https://img.freepik.com/premium-vector/cinema-camera-roll-film-logo-design-template_527727-210.jpg" alt="logo" style="width: 50px" />
+        </a>
+        <!-- Links -->
+        <ul class="nav justify-content-center">
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="main_page.html"> <strong>HOME</strong> </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="chi_siamo.html"> <strong>CHI SIAMO</strong> </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="recensioni.html">
+              <strong>RECENSIONI</strong>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="biglietteria.html">
+              <strong>BIGLIETTERIA</strong></a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+
+
+  <main>
+    <div class="container-fluid">
+      
+      <span style= color:white;text-align:center >
+        <h2> GRAZIE </h2>
+      </span>
+
+      <div class="row">
+        <div class="col rounded-sm notizia" style=text-align:center>
+          <p>La prenotazione è stata confermata, ti aspettiamo al cinema!</p>
+          <p>Di seguito sono riportati i dati relativi alla prenotazione</p> 
+        </div>
+      </div>
+      
+      <span style= color:white;text-align:center >
+        <h2> PRENOTAZIONE </h2>
+      </span>
+
+      <div class="'row">
+        <div class="col rounded-sm text-center">
+          <ul>
+            <li><strong>Intestatario:</strong> <%= customername %></li>
+            <li><strong>Spettacolo:</strong> <%= show %></li>
+            <li><strong>Numero di biglietti:</strong> <%= num_ticket %></li>
+            <li><strong>Posto:</strong> <em><%= posto %></em></li>
+            <li><strong>Tipo:</strong> <em><%= tipo %></em></li>
+            <li><strong>Giorno:</strong> <em><%= day %></em></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid" style="text-align:center;">
+      <a href="#top" class="to-top"> </a>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+ <div class="container">
+</main>
+    <footer style="background-color: #deded5">
+      <div class="container p-4">
+        <div class="row">
+          <div class="col-lg-6 col-md-12 mb-4">
+            <h5 class="mb-3" style="letter-spacing: 2px; color: #818963">
+              LE NOSTRE SALE
+            </h5>
+            <p>
+              Il 1635 di Genova è il multisala a pochi km dal centro di
+              Genova.<br />
+              Offre 11 sale, tutte dotate di tecnologia Digital Dolby
+              Surround, poltrone confortevoli e spaziose, anche VIP. <br />
+              A tua disposizione c’è anche l’area ristorazione, dove puoi
+              trovare soft drink e caffetteria, popcorn, snack, caramelle e
+              molto altro.<br />
+              Consulta la programmazione, guarda i trailer e scegli il tuo
+              prossimo film. <br />
+              <strong>Tutti i giorni film a partire da 4,90€.</strong>
+            </p>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4">
+            <h5 class="mb-3" style="letter-spacing: 2px; color: #818963">
+              Information
+            </h5>
+            <ul class="list-unstyled mb-0">
+              <li class="mb-1">
+                <a
+                  href="https://www.provincia.bz.it/sicurezza-protezione-civile/protezione-civile/eventi-manifestazioni.asp"
+                  style="color: #4f4f4f"
+                  >Frequently Asked Questions About Covid</a
+                >
+              </li>
+              <li class="mb-1">
+                <a
+                  href="https://www.tripadvisor.it/RestaurantsNear-g187823-d5971244-Fiumara_Shopping_Fun-Genoa_Italian_Riviera_Liguria.html!"
+                  style="color: #4f4f4f"
+                  >Restaurant Near Us</a
+                >
+              </li>
+              <li class="mb-1">
+                <a
+                  href="https://www.google.com/maps/@44.4122717,8.8798974,17z"
+                  style="color: #4f4f4f"
+                  >Our Position</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://imieianimali.it/ecco-le-sale-cinematografiche-per-cani/"
+                  style="color: #4f4f4f"
+                  >Our Condition About Pet In The Halls</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4">
+            <h5 class="mb-1" style="letter-spacing: 2px; color: #818963">
+              Opening Hours
+            </h5>
+            <table class="table" style="color: #4f4f4f; border-color: #666">
+              <tbody>
+                <tr>
+                  <td>Mon - Fri:</td>
+                  <td>16.00 - 01.00</td>
+                </tr>
+                <tr>
+                  <td>Sat - Sun:</td>
+                  <td>18.00 - 2.00</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <!-- Copyright -->
+      <div
+        class="text-center p-3"
+        style="background-color: rgba(0, 0, 0, 0.2)"
+      >
+        © 2020 Copyright:
+        <a
+          class="text-dark"
+          href="https://dirittodellinformazione.it/nuove-regole-sul-copyright/"
+          >Cinema 1635
+        </a>
+      </div>
+    </footer>
+  </div>
+  <!-- End of .container -->
+
+  <!-- Libreria di Bootstrap  -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"
+  ></script>
+</body>
+</html>

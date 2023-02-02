@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Inserisco il link a bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <!-- Inserisco il titolo della mia pagina nel browser -->
+    <title>Cinema 1635</title>
+
+    <!-- voglio inserire anche un'icona -->
+    <link rel="icon" type="image/png" sizes="30x30" href="Media/logo.png" />
+    <link rel="stylesheet" href="main_page.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1 id="top">CINEMA 1635</h1>
+    </header>
+
+    <!-- inserisco una barra di navigazione che contien gli hyperlinks per le altre pagine del sito-->
+    <div>
+      <nav class="navbar navbar-expand-sm bg-light navbar-light">
+        <!-- Brand/logo -->
+        <a class="navbar-brand" href="#">
+          <img src="Media/logo.png" alt="logo" style="width: 50px" />
+        </a>
+        <!-- Links -->
+        <ul class="nav justify-content-center">
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="main_page.html">
+              <strong>HOME</strong>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="chi_siamo.html">
+              <strong>CHI SIAMO</strong>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="recensioni.html">
+              <strong>RECENSIONI</strong>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="biglietteria.html">
+              <strong>BIGLIETTERIA</strong></a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Slider -->
+    <div
+      id="carouselExampleInterval"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner relative">
+        <!-- Inserisco l'immagine del film di Baz -->
+
+        <div class="carousel-item active" data-bs-interval="4000">
+          <div class="w-50 mx-auto carousel-item-inner">
+            <img
+              id
+              src="Media/baz.png"
+              class="d-block h-100 light-shadow"
+              alt="..."
+            />
+            <!-- Inserisco il div laterale con la descrizione del film -->
+            <div
+              class="movie-description ml-24px border rounded h-100 p-4 mx-5"
+            >
+              <h2 class="text-white">Lightyear - la vera storia di buzz</h2>
+              <p class="text-white">Lightyear - la vera storia di buzz</p>
+              <p class="text-white">Orari:</p>
+              <p class="text-white">16:00 - 20:30 - 22:30</p>
+              <a class="btn btn-primary" href="recensioni.html" role="button"
+                >Recensione</a
+              >
+            </div>
+            <div class="absolute-bg bg-image-blur bg-image-baz"></div>
+          </div>
+        </div>
+
+        <!-- Inserisco l'immagine del film di Spiderman No-Way-Home -->
+        <div class="carousel-item" data-bs-interval="3500">
+          <div class="w-50 mx-auto carousel-item-inner">
+            <img src="Media/spiderman.jpeg" class="d-block h-100" alt="..." />
+            <div
+              class="movie-description ml-24px border rounded h-100 p-4 mx-5"
+            >
+              <h2 class="text-white">Spiderman No-Way-Home</h2>
+              <p class="text-white">Spiderman - Inizio fase 4 Marvel Studios</p>
+              <p class="text-white">Orari:</p>
+              <p class="text-white">18:00 - 21:00 - 23:30</p>
+              <a class="btn btn-primary" href="recensioni.html" role="button"
+                >Recensione</a
+              >
+            </div>
+            <div class="absolute-bg bg-image-blur bg-image-spiderman"></div>
+          </div>
+        </div>
+
+        <!-- Inserisco l'immagine del film di Thor -->
+        <div class="carousel-item" data-bs-interval="3500">
+          <div class="w-50 mx-auto carousel-item-inner">
+            <img src="Media/thor.jpeg" class="d-block h-100" alt="..." />
+            <div
+              class="movie-description ml-24px border rounded h-100 p-4 mx-5"
+            >
+              <h2 class="text-white">Thor - Love & Thunder</h2>
+              <p class="text-white">
+                Thor - Il 4 capitolo della saga dedicata al Dio del Tuono
+              </p>
+              <p class="text-white">Orari:</p>
+              <p class="text-white">16:00 - 20:30 - 22:30</p>
+              <a class="btn btn-primary" href="recensioni.html" role="button"
+                >Recensione</a
+              >
+            </div>
+            <div class="absolute-bg bg-image-blur bg-image-thor"></div>
+          </div>
+        </div>
+
+        <!-- Inserisco l'immagine del film di Joker -->
+        <div class="carousel-item" data-bs-interval="3500">
+          <div class="w-50 mx-auto carousel-item-inner">
+            <img src="Media/joker.jpeg" class="d-block h-100" alt="..." />
+            <div
+              class="movie-description ml-24px border rounded h-100 p-4 mx-5"
+            >
+              <h2 class="text-grey">Joker - Warner Bros</h2>
+              <p class="text-grey">
+                Joker - Protagonista della pellicola il vincitore dell'oscar
+                Joaquin Phoenix
+              </p>
+              <p class="text-grey">Orari:</p>
+              <p class="text-grey">16:00 - 19:30 - 21:30</p>
+              <a class="btn btn-primary" href="recensioni.html" role="button"
+                >Recensione</a
+              >
+            </div>
+            <div class="absolute-bg bg-image-blur bg-image-joker"></div>
+          </div>
+        </div>
+
+        <!-- Inserisco l'immagine del film di TheFather -->
+        <div class="carousel-item" data-bs-interval="3500">
+          <div class="w-50 mx-auto carousel-item-inner">
+            <img src="Media/father.jpeg" class="d-block h-100" alt="..." />
+            <div
+              class="movie-description ml-24px border rounded h-100 p-4 mx-5"
+            >
+              <h2 class="text-grey">The Father - Nulla È Come Sembra</h2>
+              <p class="text-grey">
+                The Father - Il film acclamato dalla critica
+              </p>
+              <p class="text-grey">Orari:</p>
+              <p class="text-grey">16:30 - 19:00 - 21:00</p>
+              <a class="btn btn-primary" href="recensioni.html" role="button"
+                >Recensione</a
+              >
+            </div>
+            <div class="absolute-bg bg-image-blur bg-image-father"></div>
+          </div>
+        </div>
+
+        <!-- Inserisco l'immagine del film di The Bartman -->
+        <div class="carousel-item" data-bs-interval="3500">
+          <div class="w-50 mx-auto carousel-item-inner">
+            <img src="Media/batman.jpeg" class="d-block h-100" alt="..." />
+            <div
+              class="movie-description ml-24px border rounded h-100 p-4 mx-5"
+            >
+              <h2 class="text-white">The Batman - Warner Bros</h2>
+              <p class="text-white">The Batman - Con Robin Pattinson</p>
+              <p class="text-white">Orari:</p>
+              <p class="text-white">17:00 - 19:00 - 21:30</p>
+              <a class="btn btn-primary" href="recensioni.html" role="button"
+                >Recensione</a
+              >
+            </div>
+            <div class="absolute-bg bg-image-blur bg-image-batman"></div>
+          </div>
+        </div>
+
+        <!-- Inserisco i bottoni a lato del mio slider -->
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleInterval"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleInterval"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- Introduco le proposte cinematograifche attuali -->
+    <div class="proposte">
+      <h6>LE NOSTRE PROPOSTE:</h6>
+      <p>
+        Scorri la pagina per vedere gli ultimi film usciti in sala, <br />
+        oppure i film del passato acclamati dalla critica,<br />
+        i quali verranno riproposti periodicamente durante il corso dell'anno.
+        <br />
+        Scorrendo la nostra home potrai scoprire le date e le trame dei film.
+      </p>
+    </div>
+
+    <!-- Cards -->
+
+    <div class="ultimi-film-wrapper">
+      <!-- Inserisco la prima "carta" di Drive -->
+      <div class="movie-hall container ml-24px border rounded h-100 p-2 mx-5">
+        <div class="row">
+          <div class="im_1 col-3">
+            <p><img src="Media/drive.jpeg" width="100%" height="100%" /></p>
+          </div>
+          <div class="descr col-8">
+            <h4>Trama:</h4>
+            <p>
+              "Drive è un film del 2011 diretto da Nicolas Winding Refn, basato
+              sull’omonimo romanzo di James Sallis. Per arrotondare lo stipendio
+              di stuntman e meccanico, un formidabile pilota d’auto (Ryan
+              Gosling) presta i sui servigi come autista per le rapine
+              organizzate dal criminale Shannon (Bryan Cranston). La vita
+              adrenalinica ma monotona è improvvisamente interrotta
+              dall’incontro con Irene (Carey Mulligan) e suo figlio Benicio,
+              inquilini del palazzo. Nonostante la donna sia ancora emotivamente
+              legata al marito carcerato Standard Gabriel (Oscar Isaac), non può
+              nascondere l’attrazione per il pilota che, a sua volta, si
+              invaghisce di lei.
+            </p>
+            <p>
+              Per continuare la lettura clicca qui :
+              <a
+                class="btn btn-primary"
+                href="https://www.comingsoon.it/film/drive/39141/scheda/"
+                role="button"
+                >Continua Lettura</a
+              >
+            </p>
+            <p></p>
+            <p>
+              Per vedere il trailer clicca qui :
+              <a
+                class="btn btn-primary"
+                href="https://www.youtube.com/watch?v=KBiOF3y1W0Y"
+                role="button"
+                >Trailer</a
+              >
+            </p>
+            <p></p>
+
+            <p>
+              Il voto degli spettatori è stato:
+              <!-- Inserisco la valutazione del pubblico -->
+              <link
+                rel="stylesheet"
+                href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+              />
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Inserisco la seconda "carta" dei Segreti di Silente -->
+      <div class="movie-hall container ml-24px border rounded h-100 p-2 mx-5">
+        <div class="row">
+          <div class="im_2 col-3">
+            <p><img src="Media/potter.jpeg" width="100%" height="100%" /></p>
+          </div>
+          <div class="descr col-7">
+            <h4>Trama:</h4>
+            <p>
+              "Il professor Albus Silente (Jude Law) sa che il potente mago
+              oscuro Gellert Grindelwald (Mads Mikkelsen) è intenzionato a
+              prendere il controllo del mondo magico. Non essendo in grado di
+              fermarlo da solo, Silente affida al magizoologo Newt Scamander
+              (Eddie Redmayne) il compito di guidare un’intrepida squadra di
+              maghi, streghe e un coraggioso Babbano pasticcere in una
+              pericolosa missione, dove incontrano vecchie e nuove creature e si
+              scontrano con la crescente legione di seguaci di Grindelwald. Con
+              una posta in gioco così alta, quanto a lungo Silente potrà restare
+              in disparte? "
+            </p>
+            <p>
+              Per continuare la lettura clicca qui :
+              <a
+                class="btn btn-primary"
+                href="https://www.teamworld.it/cinema/animali-fantastici-i-segreti-di-silente-film-trama-trailer/"
+                role="button"
+                >Continua Lettura</a
+              >
+            </p>
+            <p></p>
+            <p>
+              Per vedere il trailer clicca qui :
+              <a
+                class="btn btn-primary"
+                href="https://www.youtube.com/watch?v=1znzsilWi0A"
+                role="button"
+                >Trailer</a
+              >
+            </p>
+            <p></p>
+
+            <p>
+              Il voto degli spettatori è stato:
+              <!-- Inserisco la valutazione del pubblico -->
+              <link
+                rel="stylesheet"
+                href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+              />
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Inserisco la terza "carta" di House of Gucci -->
+      <div class="movie-hall container ml-24px border rounded h-100 p-2 mx-5">
+        <div class="row">
+          <div class="im_3 col-3">
+            <p><img src="Media/gucci.jpeg" width="100%" height="100%" /></p>
+          </div>
+          <div class="descr col-7">
+            <h4>Trama:</h4>
+            <p>
+              "House of Gucci, il film diretto da Ridley Scott, segue la storia
+              della famiglia Gucci, raccontando l'azienda attraverso le persone
+              che ne hanno fatto parte, tra fama, genialità, momenti difficili e
+              sofferenze. In particolar modo il film ruota attorno al fatto di
+              sangue avvenuto il 27 marzo 1995 e che sconvolse il mondo della
+              moda: l'omicidio di Maurizio Gucci. A interpretare il noto
+              imprenditore italiano, all'epoca dei fatti già ex direttore
+              dell’azienda, sarà Adam Driver. Lady Gaga invece vestirà i panni
+              di Patrizia Reggiani, l’ex moglie di Gucci che fu accusata di aver
+              organizzato l’omicidio dopo essere stata lasciata dal marito per
+              una donna più giovane. Patrizia Reggiani ordinò a un killer di
+              uccidere il marito, freddato da quattro colpi di pistola
+              nell'atrio del suo palazzo. "
+            </p>
+            <p>
+              Per continuare la lettura clicca qui :
+              <a
+                class="btn btn-primary"
+                href="https://www.comingsoon.it/film/house-of-gucci/59910/scheda/"
+                role="button"
+                >Continua Lettura
+              </a>
+            </p>
+            <p>
+              Per vedere il trailer clicca qui :
+              <a
+                class="btn btn-primary"
+                href="https://www.youtube.com/watch?v=8WMVSV0-7fc"
+                role="button"
+                >Trailer</a
+              >
+            </p>
+            <p></p>
+
+            <p>
+              Il voto degli spettatori è stato:
+              <!-- Inserisco la valutazione del pubblico -->
+              <link
+                rel="stylesheet"
+                href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+              />
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <div class="proposte">
+        <h6>ATTESISSIMI:</h6>
+        <p>I film più attesi prossimamente al cinema</p>
+      </div>
+
+        <!-- carte -->
+        <div class="attesissimi-film-wrapper">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm mx-auto">
+                <div class="card1 mb-3">
+                  <div class="container">
+                    <div class="row">
+    
+                      <div class="col-md-3">
+                        <img src="Media/jurassic.webp" class="img-fluid rounded-start" alt="...">
+                      </div>
+                      <div class="col-md-9">
+                        <div class="card-body">
+                          <h5 class="card-title-1">JURASSIC WORLD : IL DOMINIO</h5>
+                          <p class="card-text-1"> Il Dominio è un film di genere azione, avventura, fantasy del
+                            2022, diretto da Colin Trevorrow, con Chris Pratt e Bryce Dallas
+                            Howard. <br>
+                            Uscita al cinema il 21 Settembre 2022.<br>
+                            Durata 146 minuti</p>
+                          </p>
+                          <p class="card-text-1"><small>Consigli per la visione : <button
+                            type="button"
+                            class="btn btn-outline-success"
+                            disabled
+                          >
+                            Qualsiasi età
+                          </button> </small> 
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm mx-auto">
+                <div class="card2 mb-3">
+                  <div class="container">
+                    <div class="row">
+                        <div class="col-md-9">
+                          <div class="card-body">
+                            <h5 class="card-title-2">OTHER-SIDE</h5>
+                            <p class="card-text-2">The Other Side è un film di genere horror, thriller del 2021,
+                              diretto da Tord Danielsson, Oskar Mellander, con Dilan Gwyn e
+                              Linus Wahlgren.<br>
+                              Uscita al cinema il 09 Settembre 2022.<br>
+                              Durata 87 minuti.</p>
+                            <p class="card-text-2"><small>Consigli per la visione:
+                              <button type="button" class="btn btn-outline-danger" disabled>
+                                Maggiori di 18 anni
+                              </button>
+                            </small></p>
+                          </div>
+                        </div>
+                        <div class="col-md-3">
+                          <img src="Media/other.jpeg" class="img-fluid rounded-start" alt="...">
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- carte -->
+
+        <div class="proposte">
+          <h6>LE NOSTRE OFFERTE:</h6>
+          <p>Al 20° ingresso nelle nostre sale potrai richiedere</p>
+          <p>1 mese gratuito sulla piattafroma di Disney Plus</p>
+          <p>dove potrai goderti da casa un ampio catalogo</p>
+          <p>comprendente i nuovissimi film Marvel</p>
+        </div>
+
+        <div class="d-grid gap-2 col-6 mx-auto">
+          <a class="btn btn-primary"  href="biglietteria.html" type="button">VAI A BIGLIETTERIA</a>
+        </div>
+        <div class="ultimi-film-wrapper">
+          <div class="card-f">
+            <img src="Media/scale.jpeg" class="card-img" alt="...">
+          </div>
+        </div>
+
+
+    <!-- FOOTER -->
+    <div class="container my-5">
+      <footer style="background-color: #deded5">
+        <div class="container p-4">
+          <div class="row">
+            <div class="col-lg-6 col-md-12 mb-4">
+              <h5 class="mb-3" style="letter-spacing: 2px; color: #818963">
+                LE NOSTRE SALE
+              </h5>
+              <p>
+                Il 1635 di Genova è il multisala a pochi km dal centro di
+                Genova.<br />
+                Offre 11 sale, tutte dotate di tecnologia Digital Dolby
+                Surround, poltrone confortevoli e spaziose, anche VIP. <br />
+                A tua disposizione c’è anche l’area ristorazione, dove puoi
+                trovare soft drink e caffetteria, popcorn, snack, caramelle e
+                molto altro.<br />
+                Consulta la programmazione, guarda i trailer e scegli il tuo
+                prossimo film. <br />
+                <strong>Tutti i giorni film a partire da 4,90€.</strong>
+              </p>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+              <h5 class="mb-3" style="letter-spacing: 2px; color: #818963">
+                Information
+              </h5>
+              <ul class="list-unstyled mb-0">
+                <li class="mb-1">
+                  <a
+                    href="https://www.provincia.bz.it/sicurezza-protezione-civile/protezione-civile/eventi-manifestazioni.asp"
+                    style="color: #4f4f4f"
+                    >Frequently Asked Questions About Covid</a
+                  >
+                </li>
+                <li class="mb-1">
+                  <a
+                    href="https://www.tripadvisor.it/RestaurantsNear-g187823-d5971244-Fiumara_Shopping_Fun-Genoa_Italian_Riviera_Liguria.html!"
+                    style="color: #4f4f4f"
+                    >Restaurant Near Us</a
+                  >
+                </li>
+                <li class="mb-1">
+                  <a
+                    href="https://www.google.com/maps/@44.4122717,8.8798974,17z"
+                    style="color: #4f4f4f"
+                    >Our Position</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://imieianimali.it/ecco-le-sale-cinematografiche-per-cani/"
+                    style="color: #4f4f4f"
+                    >Our Condition About Pet In The Halls</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+              <h5 class="mb-1" style="letter-spacing: 2px; color: #818963">
+                Opening Hours
+              </h5>
+              <table class="table" style="color: #4f4f4f; border-color: #666">
+                <tbody>
+                  <tr>
+                    <td>Mon - Fri:</td>
+                    <td>16.00 - 01.00</td>
+                  </tr>
+                  <tr>
+                    <td>Sat - Sun:</td>
+                    <td>18.00 - 2.00</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <!-- Copyright -->
+        <div
+          class="text-center p-3"
+          style="background-color: rgba(0, 0, 0, 0.2)"
+        >
+          © 2020 Copyright:
+          <a
+            class="text-dark"
+            href="https://dirittodellinformazione.it/nuove-regole-sul-copyright/"
+            >Cinema 1635
+          </a>
+        </div>
+      </footer>
+    </div>
+    <!-- End of .container -->
+
+    <!-- Libreria di Bootstrap  -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

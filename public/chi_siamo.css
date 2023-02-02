@@ -1,0 +1,63 @@
+body {
+    background-color: rgb(23, 21, 21);
+  }
+  
+  h1{
+    font-size: 90px;
+    font-family:"Courier New", monospace;
+    text-align:center;
+    color:yellow;
+  }
+
+  .movie-hall-storia{
+    margin-top: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+    color:white
+  }
+
+  .movie-hall-posizione{
+    margin-top: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+    color:white
+  }
+
+  .mappa{
+    position:relative;
+    margin-top: 20px;
+    padding-bottom: 20PX;
+    right: 20px;
+
+  }
+
+  .descr{
+    text-align:left;
+    color:white;
+  }
+  
+  .descr > h4{
+    padding-top: 10px;
+    text-align:left;
+    color:yellow;
+    font-size:20px
+  }
+  
+  .descr > p{
+    text-align:left;
+    color:white;
+    font-size:13px
+  }
+
+  .im_3{
+    padding-top: 15px;
+    height: 150px;
+    width: 150px;
+
+  }
+
+  .storia-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }

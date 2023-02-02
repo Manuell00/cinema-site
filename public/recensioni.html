@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Inserisco il link a bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <!-- Inserisco il titolo della mia pagina nel browser -->
+    <title>Cinema 1635</title>
+
+    <!-- voglio inserire anche un'icona -->
+    <link rel="icon" type="image/png" sizes="30x30" href="Media/logo.png" />
+    <link rel="stylesheet" href="recensioni.css" />
+
+  </head>
+
+
+
+  <body>
+    <header>
+      <h1 id="top">
+        CINEMA 1635
+      </h1>
+    </header>
+
+    <!-- inserisco una barra di navigazione che contien gli hyperlinks per le altre pagine del sito-->
+    <div>
+      <nav class="navbar navbar-expand-sm bg-light navbar-light">
+        <!-- Brand/logo -->
+        <a class="navbar-brand" href="#">
+          <img src="Media/logo.png" alt="logo" style="width: 50px" />
+        </a>
+        <!-- Links -->
+        <ul class="nav justify-content-center">
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="main_page.html"> <strong>HOME</strong> </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="chi_siamo.html"> <strong>CHI SIAMO</strong> </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="recensioni.html">
+              <strong>RECENSIONI</strong>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="biglietteria.html">
+              <strong>BIGLIETTERIA</strong></a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+
+    <div class="proposte">
+        <h6>LE RECENSIONI DEI NOSTRI FILM IN SALA:</h6>
+    </div>
+
+    <!-- Inizio a inserire le carte contenenti recensione film + voto utenti + voto critica  -->
+    <div class="ultimi-film-wrapper">
+      <div class="container">
+        <div class="row">
+        <!-- Inserisco la prima carta -->
+        <div class="card1 mb-3 col-md-5">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="Media/baz.png" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">LIGHTYEAR</h5>
+                <p class="card-text"> Lightyear si può definire: <strong> divertente, simpatico, carino;</strong>. <br>
+                Qualche personaggio è più riuscito, qualcuno ha una vena di tenerezza in più. 
+                Ovviamente da un punto di vista visivo è <strong>eccezionale</strong>.<br>
+                Purtroppo però, nel complesso è un film che non resta impresso eccetto per questo ritratto di Buzz,
+                che ci ricorda <i>“Verso L’Infinito e Oltre”</i> grazie alle serie Toy Story che ci ha permesso di amarlo.</p>
+                
+                <!-- Aggiungo la libreria contenente le stars (non dovrò più rifarlo) -->
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+                <!-- Inserisco il voto degli utenti -->
+                <p class="card-text"><small>Il voto degli utenti è stato : </small> 
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+
+                <hr>
+                
+                <!-- Inserisco il voto della critica -->
+                <p class="card-text"><small>Il voto della critica è stato : </small> 
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2"></div>
+        <!-- Inserisco la seconda carta -->
+        <div class="card2 mb-3 col-md-5">
+            <div class="row g-0">
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">SPIDERMAN - NO-WAY-HOME</h5>
+                  <p class="card-text">Spider-Man: No Way Home porta i fumetti sul grande schermo come non era mai successo.
+                      Il regista Jon Watts con il suo nuovo film non è solo un tributo a Spider-Man come <strong>eroe cinematografico</strong>,
+                        ma anche l'origin story di cui aveva bisogno la versione interpretata da Tom Holland,
+                      che ora finalmente si regge sulle sue gambe ed è pronta a prendere il posto che gli è sempre spettato nel Marvel Cinematic Universe.</p>
+                  <!-- Inserisco il voto degli utenti -->
+              <p class="card-text"><small>Il voto degli utenti è stato : </small> 
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+
+                <hr>
+                
+                <!-- Inserisco il voto della critica -->
+                <p class="card-text"><small>Il voto della critica è stato : </small> 
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <img src="Media/spiderman.jpeg" class="img-fluid rounded-start" alt="...">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <!-- Inserisco la terza carta -->
+          <div class="card1 mb-3 col-md-5">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="Media/thor.jpeg" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">THOR - LOVE & THUNDER</h5>
+                  <p class="card-text"> Le valutazioni sottostanti sono il valore che stiamo dando a Thor: Love &amp; Thunder come cinecomic in sé e per sé.<br>
+                    È un film guardabile, con alcune scene ispirate e una recitazione sopra le righe, tutte cose che però si perdono in un oceano di gag non sempre azzeccate.
+                    Ora, se Thor: Ragnarok vi era piaciuto, potete aggiungere un punto alle valutazioni sottostanti.<br>
+                    Thor: Love &amp; Thunder è un gradino sotto Ragnarok, ma intrattiene e sa essere genuinamente divertente, quando vuole.<br>
+                    Se invece credete che Taika Waititi abbia rovinato il Dio del Tuono, togliete una stella a quella valutazione: il nuovo film non vi farà cambiare idea e, 
+                    se possibile, vi farà odiare ancora di più il talentuoso regista neozelandese.
+                  
+                  <!-- Aggiungo la libreria contenente le stars (non dovrò più rifarlo) -->
+                  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+                  <!-- Inserisco il voto degli utenti -->
+                  <p class="card-text"><small>Il voto degli utenti è stato : </small> 
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+
+                  <hr>
+                  
+                  <!-- Inserisco il voto della critica -->
+                  <p class="card-text"><small>Il voto della critica è stato : </small> 
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2"></div>
+          <!-- Inserisco la quarta carta -->
+          <div class="card2 mb-3 col-md-5">
+              <div class="row g-0">
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title"> JOKER </h5>
+                    <p class="card-text">Il Joker di Todd Phillips è una rivisitazione d'autore del personaggio dei fumetti, che mescola diversi generi, dal dramma al musical, passando per la commedia. <br>
+                      Pieno di momenti iconici e senza paura di sporcarsi le mani e di distaccarsi dal canone dei fumetti, il film è soprattutto il palcoscenico di Joaquin Phoenix, 
+                      che ha fatto un lavoro straordinario sul corpo e sulla mimica facciale.<br>
+                      Al ruolo della vita, l'attore merita di vincere il premio Oscar. <br>
+                    La capacità di riprendere le movenze, seppur con toni diversi, del precedente attore interprete del ruolo rende la pellicola speciale per i fan.<br>
+                    Concludiamo ricordando la perdita di peso pari a 30kg del protagonista Joaquin Phoenix, altro motivo per cui è per noi meritevole del premio oscar</p>
+                  <!-- Inserisco il voto degli utenti -->
+                <p class="card-text"><small>Il voto degli utenti è stato : </small> 
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+
+                  <hr>
+                  
+                  <!-- Inserisco il voto della critica -->
+                  <p class="card-text"><small>Il voto della critica è stato : </small> 
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <img src="Media/joker.jpeg" class="img-fluid rounded-start" alt="...">
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="row">
+            <!-- Inserisco la quinta carta -->
+          <div class="card1 mb-3 col-md-5">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="Media/father.jpeg" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">THE FATHER</h5>
+                  <p class="card-text">Un dramma da camera che gronda sangue metaforico, pronto a colare come un brivido sulle nostre tempie,
+                    mentre tentiamo di capire cosa sta davvero succedendo. <br>
+                    The Father ci fa sprofondare nella malattia del suo protagonista, interpretato da un Anthony Hopkins assoluto,
+                    mai così gigantesco e fragile allo stesso tempo.<br>
+                    Florian Zeller scrive e dirige un gioiello che tocca ogni emozione dello spettro umano,
+                    giocando con i generi cinematografici mentre noi corriamo su una spiaggia mentale dove il mare si mangia i nostri passi, onda dopo onda.<br>
+                    E più passa il tempo più non riusciamo a smettere di guardarci indietro, sciogliendoci in quel tragico abbraccio che vuol dire tutto.</p>
+                  <!-- Aggiungo la libreria contenente le stars (non dovrò più rifarlo) -->
+                  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        
+                  <!-- Inserisco il voto degli utenti -->
+                  <p class="card-text"><small>Il voto degli utenti è stato : </small> 
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
+        
+                  <hr>
+                  
+                  <!-- Inserisco il voto della critica -->
+                  <p class="card-text"><small>Il voto della critica è stato : </small> 
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2"></div>
+          <!-- Inserisco la sesta carta -->
+          <div class="card2 mb-3 col-md-5">
+            <div class="row g-0">
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title"> THE BATMAN </h5>
+                  <p class="card-text">Lasciate da parte la vostra vita per tre ore scarse. <br>
+                  Immergetevi in quelle di Bruce Wayne e di Gotham che, come nelle migliori rappresentazioni di Batman, rappresenta la vera protagonista del film.<br>
+                  Matt Reeves è riuscito in un'impresa titanica: realizzare la summa di un lavoro sull'uomo pipistrello che raggiunge qui alcune vette quasi impensabili,
+                  seppur sperate fin dalle primissime immagini diffuse.<br>
+                  La pellicola di muove sempre su toni cupi e ombrosi, classico ambiente nel quale si muove il tanto amato pipistrello dei fumetti<br>
+                  Il Batman di Robert Pattinson è tragico, disperato e torvo e ha tutte le ragioni per esserlo.<br>
+                  Fate la cosa giusta e godetevi questo viaggio, accompagnato magistralmente dalla colonna sonora di Michael Giacchino.
+                  Non ve ne pentirete.</p>
+                <!-- Inserisco il voto degli utenti -->
+              <p class="card-text"><small>Il voto degli utenti è stato : </small> 
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+
+                <hr>
+                
+                <!-- Inserisco il voto della critica -->
+                <p class="card-text"><small>Il voto della critica è stato : </small> 
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <img src="Media/batman.jpeg" class="img-fluid rounded-start" alt="...">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+</div>
+
+
+
+      <!-- FOOTER -->
+    <div class="container my-5">
+      <footer style="background-color: #deded5">
+        <div class="container p-4">
+          <div class="row">
+            <div class="col-lg-6 col-md-12 mb-4">
+              <h5 class="mb-3" style="letter-spacing: 2px; color: #818963">
+                LE NOSTRE SALE
+              </h5>
+              <p>
+                Il 1635 di Genova è il multisala a pochi km dal centro di
+                Genova.<br />
+                Offre 11 sale, tutte dotate di tecnologia Digital Dolby
+                Surround, poltrone confortevoli e spaziose, anche VIP. <br />
+                A tua disposizione c’è anche l’area ristorazione, dove puoi
+                trovare soft drink e caffetteria, popcorn, snack, caramelle e
+                molto altro.<br />
+                Consulta la programmazione, guarda i trailer e scegli il tuo
+                prossimo film. <br />
+                <strong>Tutti i giorni film a partire da 4,90€.</strong>
+              </p>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+              <h5 class="mb-3" style="letter-spacing: 2px; color: #818963">
+                Information
+              </h5>
+              <ul class="list-unstyled mb-0">
+                <li class="mb-1">
+                  <a
+                    href="https://www.provincia.bz.it/sicurezza-protezione-civile/protezione-civile/eventi-manifestazioni.asp"
+                    style="color: #4f4f4f"
+                    >Frequently Asked Questions About Covid</a
+                  >
+                </li>
+                <li class="mb-1">
+                  <a
+                    href="https://www.tripadvisor.it/RestaurantsNear-g187823-d5971244-Fiumara_Shopping_Fun-Genoa_Italian_Riviera_Liguria.html!"
+                    style="color: #4f4f4f"
+                    >Restaurant Near Us</a
+                  >
+                </li>
+                <li class="mb-1">
+                  <a
+                    href="https://www.google.com/maps/@44.4122717,8.8798974,17z"
+                    style="color: #4f4f4f"
+                    >Our Position</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://imieianimali.it/ecco-le-sale-cinematografiche-per-cani/"
+                    style="color: #4f4f4f"
+                    >Our Condition About Pet In The Halls</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+              <h5 class="mb-1" style="letter-spacing: 2px; color: #818963">
+                Opening Hours
+              </h5>
+              <table class="table" style="color: #4f4f4f; border-color: #666">
+                <tbody>
+                  <tr>
+                    <td>Mon - Fri:</td>
+                    <td>16.00 - 01.00</td>
+                  </tr>
+                  <tr>
+                    <td>Sat - Sun:</td>
+                    <td>18.00 - 2.00</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <!-- Copyright -->
+        <div
+          class="text-center p-3"
+          style="background-color: rgba(0, 0, 0, 0.2)"
+        >
+          © 2020 Copyright:
+          <a
+            class="text-dark"
+            href="https://dirittodellinformazione.it/nuove-regole-sul-copyright/"
+            >Cinema 1635
+          </a>
+        </div>
+      </footer>
+    </div>
+    <!-- End of .container -->
+
+    <!-- Libreria di Bootstrap  -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
